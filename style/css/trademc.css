@@ -1,0 +1,212 @@
+.trademc-buyform * {
+	box-sizing: border-box;
+}
+.trademc-buyform-title {
+    font-weight: bold;
+    font-size: 140%;
+    margin-bottom: 20px;
+}
+.trademc-buyform-error {
+    color: #FF695E;
+    padding-top: 10px;
+}
+.trademc-buyform-error:empty {
+	display: none;
+}
+.trademc-buyform-input,
+.trademc-buyform-select select,
+.trademc-buyform-button {
+	border: 0;
+    outline: 0;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    font-size: inherit;
+    font-family: inherit;
+    color: inherit;
+    padding: 10px 16px;
+    -webkit-transition: all 100ms linear;
+    -moz-transition: all 100ms linear;
+    -ms-transition: all 100ms linear;
+    -o-transition: all 100ms linear;
+    transition: all 100ms linear;
+}
+.trademc-buyform-input,
+.trademc-buyform-select select {
+    width: 100%;
+    background: #f8f8f8;
+    margin-bottom: 5px;
+}
+.trademc-buyform-input::-webkit-input-placeholder {
+    color: #bbb;
+}
+.trademc-buyform-input:-moz-placeholder {
+    color: #bbb;
+    opacity: 1;
+}
+.trademc-buyform-input::-moz-placeholder {
+    color: #bbb;
+    opacity: 1;
+}
+.trademc-buyform-input:-ms-input-placeholder {
+    color: #bbb;
+}
+.trademc-buyform-input:focus{
+    background: #f0f0f0;
+}
+
+.trademc-buyform-select {
+	position: relative;
+}
+.trademc-buyform-select:after {
+	content: '';
+	position: absolute;
+	width: 8px;
+	height: 8px;
+	border-right: 2px solid #d8d8d8;
+	border-bottom: 2px solid #d8d8d8;
+	right: 16px;
+	top: 50%;
+	transform: rotate(45deg);
+	margin-top: -10px;
+	pointer-events: none;
+}
+.trademc-buyform-select select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    appearance: none;
+}
+.trademc-buyform-select select::-ms-expand {
+    display: none;
+}
+
+.trademc-buyform-button {
+    display: block;
+    color: #fff;
+    cursor: pointer;
+    margin-top: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .3);
+    position: relative;
+    overflow: hidden;
+	border-radius: 17.25px;
+	font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
+	font-size: 14px;
+	color: #fff;
+	background-color: #f0ad4e;
+	border-color: #f0ad4e;
+	line-height: 1.25;
+	text-align: center;
+	vertical-align: middle;
+	-webkit-user-select: none;
+	user-select: none;
+	border: 1px solid transparent;
+	padding: .5rem 1.1rem;
+	-webkit-transition: all .2s ease-in-out;
+	-o-transition: all .2s ease-in-out;
+	transition: all .2s ease-in-out;
+	width: 100%
+}
+.trademc-buyform-button.load:before,
+.trademc-buyform-button.load:after{
+    content: '';
+    position: absolute;
+    display: block;
+}
+.trademc-buyform-button.load:before {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #808ea6;
+}
+.trademc-buyform-button.load:after {
+    top: 50%;
+    left: 50%;
+    border: 2px solid;
+    border-color: #fff rgba(0,0,0,.3) rgba(0,0,0,.3);
+    width: 20px;
+    height: 20px;
+    box-sizing: border-box;
+    margin: -10px 0 0 -10px;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -khtml-border-radius: 50%;
+    border-radius: 50%;
+    -webkit-animation: loader 1s linear infinite;
+    -moz-animation: loader 1s linear infinite;
+    -ms-animation: loader 1s linear infinite;
+    -o-animation: loader 1s linear infinite;
+    animation: loader 1s linear infinite;
+}
+.trademc-buyform-button:hover {
+    background: #FFFF55;
+}
+
+@-webkit-keyframes loader
+{
+	from {
+		-webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg);
+	}
+	to {
+		-webkit-transform: rotate(360deg);
+        -moz-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+        transform: rotate(360deg);
+	}
+}
+@-ms-keyframes loader
+{
+	from {
+		-webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg);
+	}
+	to {
+		-webkit-transform: rotate(360deg);
+        -moz-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+        transform: rotate(360deg);
+	}
+}
+@-o-keyframes loader
+{
+	from {
+		-webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg);
+	}
+	to {
+		-webkit-transform: rotate(360deg);
+        -moz-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+        transform: rotate(360deg);
+	}
+}
+@keyframes loader
+{
+	from {
+		-webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg);
+	}
+	to {
+		-webkit-transform: rotate(360deg);
+        -moz-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+        transform: rotate(360deg);
+	}
+}
